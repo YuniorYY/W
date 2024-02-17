@@ -46,7 +46,7 @@ local HalfPrice;
     HalfPrice = hookmetamethod(game, "__namecall", function(remote, ...) 
         if HP == true and getnamecallmethod() == "FireServer" and remote == game.ReplicatedStorage.ShopE then
 Args = {...}
-if Args[2][2] ~= .5 then
+if Args[2][2] ~= .1 then
 return
 end
 end
