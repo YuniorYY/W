@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Mobile%20Friendly%20Orion')))()
-local Window = OrionLib:MakeWindow({Name = "w", HidePremium = true, IntroEnabled = false, SaveConfig = false, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "w", HidePremium = false, IntroEnabled = false, SaveConfig = false, ConfigFolder = "OrionTest"})
 local Tab = Window:MakeTab({
                     Name = "Home",
                     Icon = "http://www.roblox.com/asset/?id=4370345144",
@@ -46,7 +46,7 @@ local HalfPrice;
     HalfPrice = hookmetamethod(game, "__namecall", function(remote, ...) 
         if HP == true and getnamecallmethod() == "FireServer" and remote == game.ReplicatedStorage.ShopE then
 Args = {...}
-if Args[2][2] ~= .5 then
+if Args[2][2] ~= .1 then
 return
 end
 end
@@ -55,7 +55,7 @@ return HalfPrice(remote, ...)
 game.Players.LocalPlayer.PlayerGui.MainGui.ShopFrame.BuyButton.MouseButton1Click:Connect(function()
     if HP == true then
     for i = 1, game.Players.LocalPlayer.PlayerGui.MainGui.ShopFrame.MultiPanel.MultiNum.Text do
-        game.ReplicatedStorage.ShopE:FireServer(1, {game.Players.LocalPlayer.PlayerGui.MainGui.ShopFrame.SelectedListing.Value, 0.5})
+        game.ReplicatedStorage.ShopE:FireServer(1, {game.Players.LocalPlayer.PlayerGui.MainGui.ShopFrame.SelectedListing.Value, 0.1})
         end
     end
 end)
