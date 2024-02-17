@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Mobile%20Friendly%20Orion')))()
-local Window = OrionLib:MakeWindow({Name = "w", HidePremium = false, IntroEnabled = false, SaveConfig = false, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Yun is the best", HidePremium = false, IntroEnabled = false, SaveConfig = false, ConfigFolder = "OrionTest"})
 local Tab = Window:MakeTab({
                     Name = "Home",
                     Icon = "http://www.roblox.com/asset/?id=4370345144",
@@ -12,7 +12,7 @@ local Tab2 = Window:MakeTab({
                     PremiumOnly = false
                 })
                 
-Tab:AddLabel("Message Guy that exists#1915 if you have issues")
+Tab:AddLabel("Best")
 
 Tab:AddButton({
 	Name = "Infinite Yield",
